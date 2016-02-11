@@ -49,7 +49,19 @@
       </form>
    </article>
    <script>
+	   // global variables
+	   var i = 1;
+	   var listItem = "";
 	   
+	   // function to generate list
+	   processInput() {
+		   if i >= 5 {
+		   	var listItem = "item" + i;
+		   	document.getElementById(listItem).innerHTML = toolbox[i];
+		   	var toolbox = "";
+		   	
+		   }
+	   }
    </script>	   
 </body>
 </html>
